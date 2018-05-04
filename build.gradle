@@ -1,0 +1,27 @@
+apply plugin: 'application'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+mainClassName = 'com.springboot.netty.client.NettyWebSocketClientApplication'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE'
+    compile 'io.netty:netty-all:4.1.21.Final'
+    compile 'org.apache.logging.log4j:log4j-api:2.10.0'
+    compile 'org.apache.logging.log4j:log4j-core:2.10.0'
+    compile 'commons-logging:commons-logging:1.2'
+    testImplementation 'junit:junit:4.12'
+    
+}
+
+
